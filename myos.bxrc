@@ -1,0 +1,21 @@
+# 指定虚拟机的内存大小为32M
+# 看到sample配置文件中，讲到“MEGS”选项已弃用。请改用“MEMORY”选项。自行决定。
+megs:32
+
+# 指定虚拟机的BIOS镜像
+romimage: file=D:\Bochs-2.7\BIOS-bochs-latest
+vgaromimage: file=D:\Bochs-2.7\VGABIOS-lgpl-latest
+
+# 软盘启动及配置
+floppya: 1_44="4\boot.img", status=inserted
+boot: floppy
+
+# 指定日志文件，里面有各种运行时信息
+log: bochsout.txt
+
+# 不使用鼠标
+mouse: enabled=0
+
+#cpu
+cpu: ips=15000000
+
